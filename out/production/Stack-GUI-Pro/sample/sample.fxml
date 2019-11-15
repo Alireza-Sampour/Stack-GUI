@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="660.0" style="-fx-background-color: #2B323A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="182.0" prefHeight="70.0" prefWidth="315.0" text="Implemention Stack Class In Java" textFill="#fbe7c5">
+         <font>
+            <Font name="FreeSans Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="popButton" layoutX="40.0" layoutY="94.0" onAction="#stackButtonHandleAction" prefHeight="41.0" prefWidth="59.0" stylesheets="@Css.css" text="pop" textFill="#fbe7c5">
+         <font>
+            <Font name="FreeSans" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </JFXButton>
+      <Label fx:id="popLabel" focusTraversable="false" layoutX="129.0" layoutY="98.0" prefHeight="45.0" prefWidth="138.0" style="-fx-border-color: E7626F; -fx-border-insets: 1; -fx-border-radius: 9;" stylesheets="@Css.css" textFill="#fbe7c5">
+         <font>
+            <Font name="FreeSans" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <JFXButton fx:id="pushButton" layoutX="40.0" layoutY="175.0" onAction="#stackButtonHandleAction" prefHeight="41.0" prefWidth="59.0" stylesheets="@Css.css" text="push" textFill="#fbe7c5">
+         <font>
+            <Font name="FreeSans" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </JFXButton>
+      <JFXTextField fx:id="pushTF" focusColor="#2b323a" layoutX="129.0" layoutY="174.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="138.0" promptText="Enter item" style="-fx-border-color: E7626F; -fx-border-insets: 1; -fx-border-radius: 9;" styleClass="text-input" stylesheets="@Css.css" unFocusColor="#2b323a">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="FreeSans" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="peekButton" layoutX="40.0" layoutY="256.0" onAction="#stackButtonHandleAction" prefHeight="41.0" prefWidth="59.0" stylesheets="@Css.css" text="peek" textFill="#fbe7c5">
+         <font>
+            <Font name="FreeSans" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton fx:id="sizeOfStackButton" layoutX="40.0" layoutY="335.0" onAction="#stackButtonHandleAction" prefHeight="41.0" prefWidth="59.0" stylesheets="@Css.css" text="size" textFill="#fbe7c5">
+         <font>
+            <Font name="FreeSans" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </JFXButton>
+      <Label fx:id="peekLabel" focusTraversable="false" layoutX="129.0" layoutY="254.0" prefHeight="45.0" prefWidth="138.0" style="-fx-border-color: E7626F; -fx-border-insets: 1; -fx-border-radius: 9;" stylesheets="@Css.css" textFill="#fbe7c5">
+         <font>
+            <Font name="FreeSans" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Label fx:id="sizeLabel" focusTraversable="false" layoutX="129.0" layoutY="333.0" prefHeight="42.0" prefWidth="138.0" style="-fx-border-color: E7626F; -fx-border-insets: 1; -fx-border-radius: 9;" stylesheets="@Css.css" textFill="#fbe7c5">
+         <font>
+            <Font name="FreeSans" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <JFXButton fx:id="helpButton" layoutX="34.0" layoutY="562.0" onAction="#helpHandleButtonAction" text="Help" textFill="#fbe7c5">
+         <font>
+            <Font name="FreeSans" size="21.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../Stack-GUI/src/sample/Css.css" />
+            <URL value="@Css.css" />
+         </stylesheets>
+      </JFXButton>
+      <AnchorPane fx:id="helpAnchorPane" layoutX="77.0" layoutY="94.0" prefHeight="435.0" prefWidth="513.0" style="-fx-background-color: #2B323A; -fx-border-color: #fbe7c5; -fx-border-insets: 1; -fx-border-radius: 9;" visible="false">
+         <children>
+            <Label layoutX="175.0" prefHeight="77.0" prefWidth="189.0" text="What is Stack?" textFill="#fbe7c5">
+               <font>
+                  <Font name="FreeSans Bold" size="21.0" />
+               </font>
+            </Label>
+            <JFXTextArea editable="false" focusColor="#2b323a" layoutX="34.0" layoutY="110.0" prefHeight="240.0" prefWidth="446.0" styleClass="text-input" stylesheets="@../../../Stack-GUI/src/sample/Css.css" text="Stack is an abstract data type with a bounded(predefined) capacity. It is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack and the only element that can be removed is the element that is at the top of the stack, just like a pile of objects.&#10;for more information visit this link: " unFocusColor="#2b323a">
+               <font>
+                  <Font name="FreeSans" size="19.0" />
+               </font>
+            </JFXTextArea>
+            <Hyperlink ellipsisString="" focusTraversable="false" layoutX="29.0" layoutY="311.0" prefHeight="38.0" prefWidth="458.0" text="https://www.studytonight.com/data-structures/stack-data-structure" />
+            <JFXButton fx:id="backButton" layoutX="34.0" layoutY="379.0" onAction="#backHandleButtonAction" stylesheets="@../../../Stack-GUI/src/sample/Css.css" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

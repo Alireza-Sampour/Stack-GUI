@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://$USER_HOME$/javafx-sdk-12.0.1/lib" />
+      <root url="jar://$USER_HOME$/Jetbrains/fontawesomefx-8.9.jar!/" />
+      <root url="jar://$USER_HOME$/Jetbrains/jfoenix-9.0.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/javafx-sdk-12.0.1/lib" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/javafx-sdk-12.0.1/lib" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/javafx-sdk-12.0.1/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>
