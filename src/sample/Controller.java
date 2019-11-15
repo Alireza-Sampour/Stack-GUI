@@ -51,6 +51,8 @@ public class Controller {
     void backHandleButtonAction(ActionEvent event) {
         if (event.getSource() == backButton) {
             helpAnchorPane.setVisible(false);
+            Main.vBox.setVisible(true);
+
         }
     }
 
@@ -58,17 +60,17 @@ public class Controller {
     void helpHandleButtonAction(ActionEvent event) {
         if (event.getSource() == helpButton) {
             helpAnchorPane.setVisible(true);
+            Main.vBox.setVisible(false);
         }
     }
 
     @FXML
     void stackButtonHandleAction(ActionEvent event) {
         if (event.getSource() == popButton) {
-            if (stack.pop() != null) {
-                Main.removeItem(0);
+            if (stack.peek() != null) {
                 popLabel.setText("  " + stack.pop() + " deleted.");
+                Main.removeItem(stack.size());
             } else {
-                System.out.print("454");
                 popLabel.setText("Stack is empty.");
             }
             pushTF.setText("");
