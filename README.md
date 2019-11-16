@@ -1,3 +1,7 @@
 # Stack-GUI
-This code implement Stack-GUI in java
+This code implementation Stack-GUI in java
+## Description:
+implementation stack gui with javafx to realize easier
 
+### Demo:
+![Menu](https://github.com/Alireza-Sampour/Stack-GUI/blob/master/src/res/Screenshot%201.png)
