@@ -16,14 +16,6 @@
             <Font name="FreeSans Bold" size="18.0" />
          </font>
       </Label>
-      <JFXButton fx:id="popButton" layoutX="40.0" layoutY="94.0" onAction="#stackButtonHandleAction" prefHeight="41.0" prefWidth="59.0" stylesheets="@Css.css" text="pop" textFill="#fbe7c5">
-         <font>
-            <Font name="FreeSans" size="18.0" />
-         </font>
-         <padding>
-            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-         </padding>
-      </JFXButton>
       <Label fx:id="popLabel" focusTraversable="false" layoutX="129.0" layoutY="98.0" prefHeight="42.0" prefWidth="138.0" style="-fx-border-color: E7626F; -fx-border-insets: 1; -fx-border-radius: 9;" stylesheets="@Css.css" textFill="#fbe7c5">
          <font>
             <Font name="FreeSans" size="15.0" />
@@ -32,14 +24,6 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
       </Label>
-      <JFXButton fx:id="pushButton" layoutX="40.0" layoutY="175.0" onAction="#stackButtonHandleAction" prefHeight="41.0" prefWidth="59.0" stylesheets="@Css.css" text="push" textFill="#fbe7c5">
-         <font>
-            <Font name="FreeSans" size="18.0" />
-         </font>
-         <padding>
-            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-         </padding>
-      </JFXButton>
       <JFXTextField fx:id="pushTF" focusColor="#2b323a" layoutX="129.0" layoutY="174.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="138.0" promptText="Enter item" style="-fx-border-color: E7626F; -fx-border-insets: 1; -fx-border-radius: 9;" styleClass="text-input" stylesheets="@Css.css" unFocusColor="#2b323a">
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -49,6 +33,22 @@
          </font>
       </JFXTextField>
       <JFXButton fx:id="peekButton" layoutX="40.0" layoutY="256.0" onAction="#stackButtonHandleAction" prefHeight="41.0" prefWidth="59.0" stylesheets="@Css.css" text="peek" textFill="#fbe7c5">
+         <font>
+            <Font name="FreeSans" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton fx:id="pushButton" layoutX="40.0" layoutY="175.0" onAction="#stackButtonHandleAction" prefHeight="41.0" prefWidth="59.0" stylesheets="@Css.css" text="push" textFill="#fbe7c5">
+         <font>
+            <Font name="FreeSans" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton fx:id="popButton" layoutX="40.0" layoutY="99.0" onAction="#stackButtonHandleAction" prefHeight="41.0" prefWidth="59.0" stylesheets="@Css.css" text="pop" textFill="#fbe7c5">
          <font>
             <Font name="FreeSans" size="18.0" />
          </font>
