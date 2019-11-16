@@ -39,7 +39,7 @@ public class Main extends Application {
         vBox.setPrefWidth(200);
         vBox.setPrefHeight(419);
         vBox.setLayoutX(600);
-        vBox.setLayoutY(600);
+        vBox.setLayoutY(550);
     }
 
     public static void addItem(String push) {
